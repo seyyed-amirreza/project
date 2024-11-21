@@ -116,6 +116,7 @@
       <excludeFolder url="file://$MODULE_DIR$/onlineShop/vendor/dragonmantank/cron-expression" />
       <excludeFolder url="file://$MODULE_DIR$/onlineShop/vendor/graham-campbell/result-type" />
       <excludeFolder url="file://$MODULE_DIR$/onlineShop/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/onlineShop/vendor/laravel/sanctum" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

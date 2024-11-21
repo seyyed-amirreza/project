@@ -110,6 +110,7 @@
       <path value="$PROJECT_DIR$/onlineShop/vendor/dragonmantank/cron-expression" />
       <path value="$PROJECT_DIR$/onlineShop/vendor/graham-campbell/result-type" />
       <path value="$PROJECT_DIR$/onlineShop/vendor/composer" />
+      <path value="$PROJECT_DIR$/onlineShop/vendor/laravel/sanctum" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
