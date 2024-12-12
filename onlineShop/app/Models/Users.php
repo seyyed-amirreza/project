@@ -6,20 +6,22 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\DB;
 
 class Users extends Authenticatable
 {
     protected $table = 'users';
 
     public static function getAll() {
-        return self::query()->get();
+        return $users = DB::table('users')->get();
     }
-    public static function addNewUser ($newName){
-        self::query()->create(['name'=>$newName]);
-        return 's!';
-//        self::saved();
+    public static function addNewUser ($userName,$password) {
+        return DB::table('users')->insert([
+            'userName' => $userName,
+            'password' => $password
+        ]);
     }
-    public static function getOne($id){
-        return self::query()->find($id,['id','firstName','lastName','userName']);
+    public static function getOneById($id){
+        return DB::table('users')->where('id', $id);
     }
 }

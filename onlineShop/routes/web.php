@@ -12,5 +12,5 @@ Route::get('/customer',[\App\Http\Controllers\customerController::class]);
 Route::get('/factor',[\App\Http\Controllers\factorController::class]);
 Route::get('/like',[\App\Http\Controllers\likeController::class]);
 Route::get('/payment',[\App\Http\Controllers\paymentController::class]);
-Route::get('/user',[\App\Http\Controllers\usersController::class]);
+Route::get('/user',[\App\Http\Controllers\UsersController::class]);
 
