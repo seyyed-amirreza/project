@@ -16,11 +16,12 @@ class userController extends Controller
     {
         $users = User::getAll();
 
-        return view('/index', ['user' => $users]);
+        return view('user.index', compact('users'));
     }
     public function create(Request $request)
     {
         $data = $request->all();
         User::addNewUser($data['firstName'],$data['lastName'],$data['userName'],$data['password']);
+        return redirect('/user/showAll');
     }
 }
